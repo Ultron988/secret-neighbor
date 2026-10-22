@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1020">
+    <title>A Little Secret</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="stars" aria-hidden="true"></div>
+
+    <main class="card">
+        <div class="top-label">
+            <span class="gold-dot"></span>
+            A LITTLE MYSTERY
+        </div>
+
+        <div class="lock" aria-hidden="true">♧</div>
+
+        <section id="welcome" class="screen active">
+            <p class="eyebrow">SOMEONE LEFT YOU A NOTE</p>
+            <h1>Something<br><span>for you.</span></h1>
+            <p class="description">
+                Nothing serious. Just a little mystery
+                waiting to be solved.
+            </p>
+            <button id="startButton" class="primary-button">
+                Open the secret <span>↗</span>
+            </button>
+            <p class="footnote">A little curiosity never hurt.</p>
+        </section>
+
+        <section id="riddle" class="screen" hidden>
+            <p class="eyebrow">THE FIRST CLUE</p>
+            <h2>Can you solve this?</h2>
+
+            <div class="riddle-box">
+                <span class="quote-mark">“</span>
+                I live close enough that a hello
+                wouldn't need a long journey.
+                <br><br>
+                We share the same neighbourhood.
+                What might I be to you?
+            </div>
+
+            <label for="answer">Your answer</label>
+            <input id="answer" type="text" placeholder="Type your guess..." autocomplete="off" maxlength="60">
+
+            <p id="feedback" class="feedback" aria-live="polite"></p>
+
+            <button id="unlockButton" class="primary-button">
+                Unlock message <span>→</span>
+            </button>
+
+            <button id="hintButton" class="text-button">
+                Need a hint?
+            </button>
+
+            <p id="hint" class="hint" hidden>
+                It's someone who lives near your home.
+            </p>
+        </section>
+
+        <section id="reveal" class="screen" hidden>
+            <div class="success-icon" aria-hidden="true">✦</div>
+            <p class="eyebrow">MYSTERY SOLVED</p>
+            <h2>A little hello...</h2>
+
+            <div class="letter">
+                <p class="letter-greeting">Hey neighbour,</p>
+                <p class="message">
+                    I can't make life less stressful for you, neighbour 😂, but I can at least hope it treats you a
+                    little better. And if a random conversation ever makes your day slightly less boring, you know where
+                    to find me. 😊
+
+                </p>
+                <div class="letter-line"></div>
+                <p class="signature">From someone nearby.</p>
+            </div>
+
+            <p class="closing">
+                No big reason. Just thought I'd say hello.
+            </p>
+
+            <button id="againButton" class="text-button">
+                ↻ Read it again
+            </button>
+        </section>
+
+        <footer>
+            <span>MADE OF CURIOSITY</span>
+            <span class="footer-star">✦</span>
+            <span>DELIVERED WITH A SMILE</span>
+        </footer>
+    </main>
+</body>
+
+</html>
